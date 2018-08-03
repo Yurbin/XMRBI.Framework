@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBF6795C-4719-4B00-B885-2A9AB08D31AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XMRBI.Service</RootNamespace>
+    <AssemblyName>XMRBI.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XMRBI.Entity\XMRBI.Entity.csproj">
+      <Project>{fecd6419-d683-4bce-8003-d70f78979b58}</Project>
+      <Name>XMRBI.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMRBI.Infrastructure\XMRBI.Infrastructure.csproj">
+      <Project>{92fa6fba-6406-4892-a1fa-56b256b281b8}</Project>
+      <Name>XMRBI.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMRBI.IRepository\XMRBI.IRepository.csproj">
+      <Project>{c8f90d2d-f6b2-4ef7-9241-838c210db23a}</Project>
+      <Name>XMRBI.IRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMRBI.IService\XMRBI.IService.csproj">
+      <Project>{c2d70c92-8991-46e8-8c54-5de57107986d}</Project>
+      <Name>XMRBI.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMRBI.Repository\XMRBI.Repository.csproj">
+      <Project>{ccc72004-1d15-46dd-84b8-22905ad219d0}</Project>
+      <Name>XMRBI.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
