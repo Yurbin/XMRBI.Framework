@@ -99,15 +99,22 @@
     <Content Include="Content\framework\css\console.css" />
     <Content Include="Content\framework\css\index.css" />
     <Content Include="Content\framework\css\login.css" />
+    <Content Include="Content\framework\css\public.css" />
     <Content Include="Content\framework\images\avatar.png" />
     <Content Include="Content\framework\images\login.jpg" />
     <Content Include="Content\framework\images\logo.png" />
     <Content Include="Content\framework\images\pwd-1.png" />
     <Content Include="Content\framework\images\pwd-2.png" />
+    <Content Include="Content\framework\js\address.js" />
+    <Content Include="Content\framework\js\bodyTab.js" />
+    <Content Include="Content\framework\js\cache.js" />
+    <Content Include="Content\framework\js\cacheUserInfo.js" />
     <Content Include="Content\framework\js\canvas.min.js" />
     <Content Include="Content\framework\js\common.js" />
     <Content Include="Content\framework\js\donate.js" />
     <Content Include="Content\framework\js\global.js" />
+    <Content Include="Content\framework\js\index.js" />
+    <Content Include="Content\framework\js\main.js" />
     <Content Include="Content\framework\js\navbar.js" />
     <Content Include="Content\framework\js\paging.js" />
     <Content Include="Content\framework\js\tab.js" />
@@ -268,6 +275,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

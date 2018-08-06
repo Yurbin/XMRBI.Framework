@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="BaseRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\PermissionRepository.cs" />
     <Compile Include="System\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>

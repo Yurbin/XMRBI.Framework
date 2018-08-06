@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Elight.Web.Filters
+namespace XMRBI.Web.Filters
 {
     /// <summary>
     /// 表示一个特性，该特性用于标识用户是否需要登陆。
